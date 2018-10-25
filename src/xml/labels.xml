@@ -3,5 +3,7 @@
 	<label>
 		<name>Musik</name>
 	</label>
-	<label name="Veranstaltung" />
+	<label>
+		<name>Veranstaltung</name>
+	</label>
 </labels>
