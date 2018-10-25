@@ -4,7 +4,7 @@ package pack;
  * Dies wird die Klasse Klassifikator.
  * Sie ist der Mittelpunkt des gesamten Programms, denn in ihr liegen die Variablen, Methoden und
  * Funktionen, die von allen anderen Klassen benutzt werden. So gibt es hier:
- *  - labels[]     : Das Array mit den Labels, nach denen die Texte "sortiert" werden.
+ *  - label[]     : Das Array mit den Labels, nach denen die Texte "sortiert" werden.
  *  - texte[]      : Das Array mit den zu klassifizierenden Texten.
  *  - textids	   : Eine ArrayList, die die IDs der Texte speichert (ID=1 heisst (Index in texte[])=1).
  *  - ergebnisse   : ergebnisse ist eine Map, die als Key die jeweilige textid (Int) und als Value ein 
