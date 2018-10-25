@@ -3,9 +3,13 @@
 	<text>
 		<inhalt>Ich bin ein Text zu Musik.</inhalt>
 	</text>
-	<text inhalt="Ich bin ein Text zu einer Veranstaltung." />
+	<text>
+		<inhalt>Ich bin ein Text zu einer Veranstaltung.</inhalt>
+	</text>
 	<text>
 		<inhalt>Ich bin ein Text zu einer Musikveranstaltung.</inhalt>
 	</text>
-	<text inhalt="Ich bin ein Text über nichts." />
+	<text>
+		<inhalt>Ich bin ein Text über nichts.</inhalt>
+	</text>
 </texte>
