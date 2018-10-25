@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<texte>
+	<text>
+		<inhalt>Ich bin ein Text zu Musik.</inhalt>
+	</text>
+	<text inhalt="Ich bin ein Text zu einer Veranstaltung." />
+	<text>
+		<inhalt>Ich bin ein Text zu einer Musikveranstaltung.</inhalt>
+	</text>
+	<text inhalt="Ich bin ein Text über nichts." />
+</texte>
