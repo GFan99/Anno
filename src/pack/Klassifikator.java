@@ -2,6 +2,7 @@ package pack;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 
 /**
@@ -80,5 +81,18 @@ public class Klassifikator {
 		}
 		else return -1;
 	}
+	
+	public void schrMap(Integer id, boolean[] werte) {
+		this.ergebnisse.put(id, werte);
+	}
+	
+	public HashMap<Integer,boolean[]> sortieren(HashMap<Integer,boolean[]> map) {
+		HashMap<Integer,boolean[]> sort = new HashMap<Integer,boolean[]>();
+		for (int i = 0; i<map.size();i++) {
+			sort.put(i, map.get(i));
+		}
+		return sort;
+	}
+	
 
 }
