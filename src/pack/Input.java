@@ -22,6 +22,17 @@ import org.w3c.dom.*;
  */
 public class Input {
 	
+	public File pfadNachOS(String dateiname) {
+		String osName = System.getProperty("os.name");
+		if (osName.indexOf("Windows") != -1) {
+			String pfad = System.getProperty("user.dir");//user.dir ist workspace
+			return new File(pfad+"//Eingabe//"+dateiname);
+		}
+		else {
+			return new File("../Eingabe/"+dateiname);
+		}
+	}
+	
 	/**
 	 * Eine Methode, um die XML-Datei mit den Labels einzulesen und als String[]-Array zurueckzugeben.
 	 * @param
@@ -29,10 +40,11 @@ public class Input {
 	 */
 	public String[] labelLesen(){
 		try {
-			File fXmlFile = new File("/Anno/src/xml/labels.xml");
+			
+			String dateiname ="labels.xml";
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document doc = builder.parse(fXmlFile);
+			Document doc = builder.parse(pfadNachOS(dateiname));
 			NodeList nList = doc.getElementsByTagName("label");
 			
 			String[] label = new String[nList.getLength()];
@@ -63,10 +75,11 @@ public class Input {
 	 */
 	public String[] texteLesen(){
 		try {
-			File fXmlFile = new File("/Anno/src/xml/texte.xml");
+			String dateiname="texte.xml";
+			
 			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder builder = factory.newDocumentBuilder();
-			Document doc = builder.parse(fXmlFile);
+			Document doc = builder.parse(pfadNachOS(dateiname));
 			NodeList nList = doc.getElementsByTagName("text");
 			
 			String[] texte = new String[nList.getLength()];
