@@ -49,7 +49,7 @@ public class Output {
 		
 	}
 	
-	public void abbruchSave(ArrayList<Integer> id, String[] texte, String[] label, Map<Integer,boolean[]> erg) {
+	public void abbruchSave(ArrayList<Integer> id, String[] texte, String[] label, HashMap<Integer,boolean[]> erg) {
 		
 	}
 
