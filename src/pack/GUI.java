@@ -4,6 +4,7 @@ package pack;
  * Dies wird die Klasse GUI.
  * In ihr wird die gesamte graphische Oberflaeche progammiert.
  *  - start()		 : Diese Methode startet die GUI.
+ *  - idabfrage()	 : Diese Funktion soll den Nutzer nach seiner ID fragen und diese dann auch zurück geben.
  *  - getLabel()  	 : Diese Methode soll die vom Nutzer ausgewaehlten Label erfassen und speichern. Dazu
  *  					nutzt sie zunaechst die Funktion Klassifikator.waehleText() und stellt den zur
  *  					erhaltenen TextID gehoerigen Text dar. Dann wartet sie auf ein Clicked-Event des 
@@ -16,6 +17,7 @@ package pack;
  *  - schliessen()	 : Beendet die graphische Darstellung und startet den Speichervorgang.
  *  - abbruch()		 : Diese Methode wird ausgeloest, wenn die graphische Oberflaeche vom Nutzer vorzeitig
  *  					geschlossen wird. Sie startet die "Abbruchspeicherung".
+ *  - fortschritt	 : Zeigt ein kleines Fenster mit dem Fortschritt.
  * @author becksusanna
  * @version 0.1
  */
