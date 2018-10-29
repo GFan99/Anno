@@ -1,5 +1,7 @@
 package pack;
 
+import javafx.scene.control.ProgressBar;
+
 /**
  * Dies wird die Klasse GUI.
  * In ihr wird die gesamte graphische Oberflaeche progammiert.
@@ -22,5 +24,7 @@ package pack;
  * @version 0.1
  */
 public class GUI {
+	public ProgressBar fortschritt;
+	
 
 }
